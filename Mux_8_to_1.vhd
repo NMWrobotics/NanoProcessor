@@ -55,6 +55,6 @@ Decode_3_to_8_0 : Decoder_3_to_8
     Y => G );
 
 
-FL <= (D(0) AND G(0)) AND (D(1) AND G(1)) AND (D(2) AND G(2)) AND (D(3) AND G(3)) AND (D(4) AND G(4)) AND (D(5) AND G(5)) AND (D(6) AND G(6)) AND (D(7) AND G(7));
+FL <= (D(0) AND G(0)) OR (D(1) AND G(1)) OR (D(2) AND G(2)) OR (D(3) AND G(3)) OR (D(4) AND G(4)) OR (D(5) AND G(5)) OR (D(6) AND G(6)) OR (D(7) AND G(7));
 F <= EN AND FL;
 end Behavioral;
